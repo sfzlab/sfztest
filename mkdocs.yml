@@ -1,0 +1,65 @@
+remote_branch:    "www"
+site_dir:         "_site"
+site_description: "sfztest wiki"
+site_name:        "sfztest wiki"
+site_author:      "kinwie"
+site_url:         "https://redtide.github.io/sfztest"
+repo_url:         "https://github.com/redtide/sfztest/"
+copyright:        "Copyright &copy; 2023 kinwie - Made with Material for MkDocs"
+repo_name:        "GitHub"
+
+extra:
+  generator: false
+
+extra_css:
+- assets/css/github.css
+
+markdown_extensions:
+  toc:
+    permalink: 🔗 # or `true` for the default anchor header icon
+
+  pymdownx.highlight:       # TODO: replace all these with highlight.js
+    anchor_linenums: true   #
+  pymdownx.inlinehilite: {} #
+  pymdownx.superfences: {}
+
+plugins:
+  search: {}
+
+theme:
+  name: "material"
+  font: false
+  icon:
+    admonition:
+      abstract: fontawesome/solid/person-digging
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  palette:
+  # Palette toggle for light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: "default"
+    toggle:
+      icon: "material/weather-night"
+      name: "Switch to dark mode"
+  # Palette toggle for dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: "slate"
+    toggle:
+      icon: "material/weather-sunny"
+      name: "Switch to light mode"
+  features:
+  - content.action.edit
+  - content.action.view
+  - content.code.copy
+  - header.autohide
+  - navigation.footer
+nav:
+- "index.md"
+- "Cymbal-choke-test-for-edrums-and-keyboard-mapping-mode.md"
+- "How-Release-Trigger-Works-in-SFZ.md"
+- "Issue-for-ampeg_release_oncc133.md"
+- "Polyaft-choke-with-velocity-range-part-2.md"
+- "sfizz-part-1-seq_-and-_rand.md"
+- "sfizz-part-2-group-and-off_by.md"
+- "sfizz-part-3-pitch_keycenter=sample.md"
