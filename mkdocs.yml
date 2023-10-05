@@ -1,12 +1,13 @@
 remote_branch:    "www"
 site_dir:         "_site"
-site_description: "sfztest wiki"
 site_name:        "sfztest wiki"
+site_description: "sfztest wiki"
 site_author:      "kinwie"
 site_url:         "https://redtide.github.io/sfztest"
 repo_url:         "https://github.com/redtide/sfztest/"
-copyright:        "Copyright &copy; 2023 kinwie - Made with Material for MkDocs"
 repo_name:        "GitHub"
+copyright:        "Copyright &copy; 2023 kinwie - Made with Material for MkDocs"
+edit_uri:         "edit/master/docs/"
 
 extra:
   generator: false
@@ -14,17 +15,16 @@ extra:
 extra_css:
 - assets/css/github.css
 
+plugins:
+  search: {}
+
 markdown_extensions:
   toc:
     permalink: 🔗 # or `true` for the default anchor header icon
-
   pymdownx.highlight:       # TODO: replace all these with highlight.js
     anchor_linenums: true   #
   pymdownx.inlinehilite: {} #
   pymdownx.superfences: {}
-
-plugins:
-  search: {}
 
 theme:
   name: "material"
@@ -54,6 +54,8 @@ theme:
   - content.code.copy
   - header.autohide
   - navigation.footer
+  - navigation.top
+
 nav:
 - "index.md"
 - "Cymbal-choke-test-for-edrums-and-keyboard-mapping-mode.md"
